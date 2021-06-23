@@ -175,7 +175,7 @@ html, body{
   padding: 0px;
 }
 #logo-image {
-    background: url("/pictures/hartwoodcollage_100x100.png") no-repeat;
+    background: url("pictures/hartwoodcollage_100x100.png") no-repeat;
     background-size: 60px 61px;
     width: 60px;
     height: 61px;
@@ -249,12 +249,12 @@ a:link, a:visited {
   box-shadow: 0 1px 5px 1px #12460b;
 }
 #product-tile {
-  background: url("/pictures/godrays-wreath_250.jpg") no-repeat;
+  background: url("pictures/godrays-wreath_250.jpg") no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
 #info-tile {
-  background: url("/pictures/ownertype2_250.png") no-repeat;
+  background: url("pictures/ownertype2_250.png") no-repeat;
   background-size:  100% 100%;
   background-position: center;
 }
@@ -483,7 +483,7 @@ section {
 }
 @media (min-width: 576px) and (max-width: 767px) {  /*sm*/
   .container .jumbotron {
-  background: url("/pictures/hartwoodbanner_575x143.jpg") no-repeat;
+  background: url("pictures/hartwoodbanner_575x143.jpg") no-repeat;
   height: 143px;
   }
   .col-smaller-12 {
@@ -493,20 +493,20 @@ section {
 }
 @media (min-width: 768px) and (max-width: 991px) {   /*md*/
   .container .jumbotron {
-    background: url("/pictures/hartwoodbanner_768x192.jpg") no-repeat;
+    background: url("pictures/hartwoodbanner_768x192.jpg") no-repeat;
     height: 192px;
 
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {   /*lg*/
   .container .jumbotron {
-  background: url("/pictures/hartwoodbanner_992x248.jpg") no-repeat;
+  background: url("pictures/hartwoodbanner_992x248.jpg") no-repeat;
   height: 248px;
  }
 }
 @media (min-width: 1200px) {     /*xl*/
   .container .jumbotron {
-    background: url("/pictures/hartwoodbanner.jpg") no-repeat;
+    background: url("pictures/hartwoodbanner.jpg") no-repeat;
     height: 300px;
    }
   #info-tile {
@@ -516,7 +516,7 @@ section {
  }
  @media (min-width: 1400px) {    /*xxl*/
   .container .jumbotron {
-    background: url("/pictures/hartwoodbanner_1400x350.jpg") no-repeat;
+    background: url("pictures/hartwoodbanner_1400x350.jpg") no-repeat;
     height: 350px;
    }
    .Shop-item-tile {
