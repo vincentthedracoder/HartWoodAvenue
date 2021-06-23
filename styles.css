@@ -175,7 +175,7 @@ html, body{
   padding: 0px;
 }
 #logo-image {
-    background-image: url("pictures/hartwoodcollage_100x100.png");
+    background-image: url("./pictures/hartwoodcollage_100x100.png");
     background-repeat: no-repeat;
     background-size: 60px 61px;
     width: 60px;
