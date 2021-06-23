@@ -221,6 +221,7 @@ html, body{
   flex-direction: column;
 }
 #header {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   max-width: 44%;
@@ -243,9 +244,9 @@ html, body{
   background-color: bisque;  
 }
 #navBarToggle {
-  position: fixed;
-  top: 0;
-  right: 20px;
+  position: absolute;
+top: 0;
+right: -50px;
 }
 
 
@@ -635,9 +636,19 @@ section {
     background: url("../pictures/hartwoodbanner.jpg") no-repeat;
     height: 300px;
    }
+   #header {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+  }
+  }
   #info-tile {
     max-width: 250px;
     margin: 0 auto 15px;
+  } #header {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
   }
  }
  @media (min-width: 1400px) {    /*xxl*/
@@ -648,5 +659,10 @@ section {
    .Shop-item-tile {
     padding: 0 12px 12px 12px;
    }
+   #header {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
  }
 /*↑for adding a background image for screen sizes + media things ↑*/
