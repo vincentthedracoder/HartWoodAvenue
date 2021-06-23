@@ -9,8 +9,15 @@
   <!--this meta changes viewport sizes for mobile or zooming in alot.//--> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--link to boot strap css and my css file//-->
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="hartwood css.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css.css">
+  
+
+<!--links bootstrap js and my js to html//-->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js" integrity="sha512-iZIBSs+gDyTH0ZhUem9eQ1t4DcEn2B9lHxfRMeGQhyNdSUz+rb+5A3ummX6DQTOIs1XK0gOteOg/LPtSo9VJ+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <title>HartwoodAvenue</title>
 </head>
 <body>
@@ -42,7 +49,7 @@
 <div>
   <!--figcaption to describe one or multiple pictures. but still use alt tag to describe each picture or link use width and height to preserve spot on page for image use css sizes ctrl + alt + i -> network -> throttiling to see if properly loaded, if no width/ height could break layout if pitcure does not load or slow//-->
   <figure id="img-div">
-    <a id="tribute-link" target="_blank" href="https://www.etsy.com/shop/HartwoodAvenue"><img id="image" src="/pictures/hartwoodbanner.jpg" width="1200" height="300" alt="hartwood avenue banner"></a>
+    <a id="tribute-link" target="_blank" href="https://www.etsy.com/shop/HartwoodAvenue"><img id="image" src="pictures/hartwoodbanner.jpg" width="1200" height="300" alt="hartwood avenue banner"></a>
     <figcaption class="sr-only" id="img-caption">A banner of hartwood avenue</figcaption>
   </figure>
   <p id="tribute-info">wreaths, risers, garlands, and more!</p>
@@ -58,7 +65,7 @@ Like myself, my creations are a mash up. A little bit farmhouse and a little bit
 Everything you see here is made in my home studio. I even do my own wood working out in the garage!
 It’s an honor to create home decor from the heart for you.
 Thank ya’ll for stopping by!</p>
-       <a target="_blank" href="https://www.etsy.com/shop/HartwoodAvenue" alt="link to etsy" ><img id="ownerimage" src="/pictures/hartwoodowner.jpg" width="200" height="200" alt="image of owner"></a>
+       <a target="_blank" href="https://www.etsy.com/shop/HartwoodAvenue" alt="link to etsy" ><img id="ownerimage" src="pictures/hartwoodowner.jpg" width="200" height="200" alt="image of owner"></a>
   </div>
   <div>
    <iframe id="video" width="340" height="191" src="https://www.youtube.com/embed/tZ57x7dBjeI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -89,7 +96,8 @@ Thank ya’ll for stopping by!</p>
 
 
 <!--links bootstrap js and my js to html//-->
-<script src="/js/bootstrap.bundle.min.js"></script>
-<script src="hartwood js.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js.js"></script>
 </body>
 </html>
