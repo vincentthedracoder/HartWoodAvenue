@@ -576,7 +576,7 @@ section {
     min-width: 280px;
   }
   #product-tile, #info-tile {
-    width: 280px;
+    width: 250px;
     margin: 0 auto 15px;
   }
   /* ↓↑ margin: 0 auto 15px; makes tiles centered*/
@@ -586,13 +586,10 @@ section {
   div.Shop-item-tile {
     margin: 0 auto 0;
   }
-  #product-tile {
-    max-width: 250px;
-  }
 }
 @media (min-width: 360px) and (max-width: 575px) {
   #product-tile, #info-tile {
-    width: 360px;
+    width: 250px;
     margin: 0 auto 15px;
   }
   .tiles {
@@ -610,9 +607,6 @@ section {
   }
   .card-footer section:nth-child(2) {
     margin-top: 10px;
-  }
-  #product-tile {
-    max-width: 250px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {  /*sm*/
