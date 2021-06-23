@@ -1,0 +1,532 @@
+/* for cart ↓↓↓↓↓*/
+/* Dropdown Button */
+.dropbtn {
+  position: fixed;
+  background-color: #186e0c;
+  width: 90px;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  z-index: 1;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdowncart {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: tan;
+  color: hsl(130, 100%, 20%);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #12460b;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdowncart:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdowncart:hover .dropbtn {background-color: #3e8e41;}
+/* for cart ↑↑↑↑ */
+
+
+
+/* from https://www.youtube.com/watch?v=YeFzkC2awTM JavaScript Shopping Cart Tutorial for Beginners↓↓ */
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #12460b;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #12460b;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #12460b;
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #EB5757;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+.btn-danger:hover {
+  box-shadow: 0 1px 5px 1px #12460b;
+}
+.btn-danger:hover {
+  background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #12460b;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #12460b;
+  font-size: 1.2em;
+
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+}
+
+/* https://www.youtube.com/watch?v=YeFzkC2awTM JavaScript Shopping Cart Tutorial for Beginners↑↑↑↑↑↑ */
+
+/*  text-align:center; makes items centered*/ 
+html, body{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  background-color: tan;
+  color: hsl(130, 100%, 20%);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+#header {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 44%;
+}
+.container {
+  padding: 0px;
+}
+#logo-image {
+    background-image: url("./pictures/hartwoodcollage_100x100.png");
+    background-repeat: no-repeat;
+    background-size: 60px 61px;
+    width: 60px;
+    height: 61px;
+    margin-top: -8px;
+  }
+#header-color {
+  background-color:  tan;
+  border-color: tan;
+}
+.nav-item a:hover:hover {
+  background-color: bisque;  
+}
+#navBarToggle {
+  position: fixed;
+  top: 0;
+  right: 20px;
+}
+
+
+.navbar-nav {
+  flex-direction: row;
+}
+.nav-item {
+  padding: 15px
+}
+
+.dropdown-menu {
+  flex-direction: row;
+}
+
+#title {
+   word-wrap: break-word;
+   vertical-align: middle;
+    font-size: 24px;
+    text-align: center;
+    white-space: pre-wrap; /*wraps text at space's*/
+  }
+  /*↓To make search bar and button next to each other↓*/
+.d-flex { 
+ flex-direction: row;
+}/*↑To make search bar and button next to each other↑*/
+/* pseudo-class selector. changes links* can add other pseudos like :nth-child(2):hover*/
+a:link, a:visited {
+  text-decoration: none;/* removes line from links*/
+}
+/*↓To remove screen reader text from screen↓*/
+.sr-only{
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}/*↑To remove screen reader text from screen↑*/
+/*↓for home page↓*/
+#homeactive {
+  background-color: bisque;
+}
+#home-tiles {
+  margin-top: 10px;
+}
+#product-tile, #info-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+}
+#product-tile:hover, #info-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #12460b;
+}
+#product-tile {
+  background: url("./pictures/godrays-wreath_250.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+#info-tile {
+  background: url("../pictures/ownertype2_250.png") no-repeat;
+  background-size:  100% 100%;
+  background-position: center;
+}
+#map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+}
+#product-tile span, #info-tile span, #map-tile span {
+position: absolute;
+bottom: 0;
+right: 0;
+width: 100%;
+text-align: center;
+font-size: 1.6em;
+text-transform: uppercase;
+background-color:  #000;
+color: #FFF;
+opacity: .8;
+}/*↑for home page↑*/
+
+
+/*↓for products list page↓*/
+#products-title {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+*↓for product list page↓*/
+.container div.text-center {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.Shop-item-tile {
+ margin-bottom: 25px;
+ padding-bottom: 12px;
+}
+.Shop-item-tile hr {
+  width: 80%;
+}
+.Shop-item-tile .Shop-item-price {
+  font-size: 1.1em;
+  text-align: center;
+}
+.Shop-item-tile .Shop-item-price span {
+  font-size: .6em;
+  text-align: center;
+}
+.Shop-item-photo {
+position: relative;
+border: 2px solid #12460b;
+overflow: hidden;
+padding: 0;
+margin: 5px -5px 0 auto;
+max-width: 250px;
+}
+.Shop-item-photo:hover {
+  box-shadow: 0 1px 5px 1px #12460b;
+}
+.Shop-item-photo span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  font-size: 1.25em;
+  background-color: rgba(165, 125, 76, 0.80);
+  text-align: center;
+}
+.Shop-item-description {
+  position: relative;
+  margin-top: -92px;
+   padding: 10px;
+   text-align: center;
+}
+h3.Shop-item-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+#shop-item-details {
+  position: absolute;
+ text-align: center;
+  width: 90%;
+  margin-right: auto;
+  margin-left: 5%;
+  font-size: 1.2em;
+  font-style: italic;
+  white-space: pre-wrap;
+}
+
+
+#product-boarder {
+  position: relative;
+  background-color: rgba(165, 125, 76, 0.363);
+  padding: 0 0 0 0;
+  border-radius: 2%;
+  height: 420px;
+}
+
+#product-boarder:hover {
+  box-shadow: 0 1px 5px 1px #12460b;
+}
+
+div.Shop-item-tile {
+  max-width: 250px;
+  margin: 0 auto 10px;
+}
+.img-fluid {
+  height: 250px;
+}
+
+#add-to-cart {
+  position: absolute;
+  bottom: 0;
+  
+  background-color: hsl(130, 100%, 20%);
+  border-color: #3f0c1f;
+ z-index: 2;
+}
+
+#add-to-cart:hover {
+box-shadow: 0 1px 5px 1px #12460b;
+}
+/*↑for product list page↑*/
+
+
+
+.row>* {
+  padding-left: 0;
+}
+
+/*↓for product category list page↓*/
+#product-categorys-title {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.tiles {
+  position: relative; 
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0px auto 15px 10px;
+}
+.tiles span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  background-color: #000;
+  color: #FFF;
+  opacity: 0.8;
+}
+.tiles:hover {
+  box-shadow: 0 1px 5px 1px #12460b;
+}/*↑for product category list page↑*/
+
+/*↓for footer ↓*/
+/*this with this inside of body display: flex;flex-direction: column; makes footer stick to bottom */
+footer {
+  margin-top: auto;
+}
+section span {
+  font-size: 1.2em;
+  font-weight:bold;  
+}
+section {
+  font-weight: 600;
+}
+#testimonial {
+  font-weight: 600;
+ font-style: italic;
+}
+/*↑for footer↑*/
+
+/*↓for adding a background image for screen sizes + media things↓*/ 
+.container .jumbotron { /*main settings for background jumbotron image for they are not needed in the @media's*/
+  background-size: 100% 100%;
+  width: auto;
+  margin-top: -8px;
+}
+@media (max-width: 359px) {
+  #banner {
+    min-width: 280px;
+  }
+  #product-tile, #info-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+  /* ↓↑ margin: 0 auto 15px; makes tiles centered*/
+  .tiles {
+    margin: 0 auto 15px;
+  }
+  div.Shop-item-tile {
+    margin: 0 auto 0;
+  }
+}
+@media (min-width: 360px) and (max-width: 575px) {
+  #product-tile, #info-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+  .tiles {
+    margin: 0 auto 15px;
+  }
+  #product-boarder {
+    max-width: 250px;
+    margin-left: 0;
+  }
+  .Shop-item-photo {
+    margin-left: 10px;
+  }
+  .card-footer section {
+    text-align: center;
+  }
+  .card-footer section:nth-child(2) {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {  /*sm*/
+  .container .jumbotron {
+  background: url("pictures/hartwoodbanner_575x143.jpg") no-repeat;
+  height: 143px;
+  }
+  .col-smaller-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {   /*md*/
+  .container .jumbotron {
+    background: url("pictures/hartwoodbanner_768x192.jpg") no-repeat;
+    height: 192px;
+
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {   /*lg*/
+  .container .jumbotron {
+  background: url("pictures/hartwoodbanner_992x248.jpg") no-repeat;
+  height: 248px;
+ }
+}
+@media (min-width: 1200px) {     /*xl*/
+  .container .jumbotron {
+    background: url("pictures/hartwoodbanner.jpg") no-repeat;
+    height: 300px;
+   }
+  #info-tile {
+    max-width: 250px;
+    margin: 0 auto 15px;
+  }
+ }
+ @media (min-width: 1400px) {    /*xxl*/
+  .container .jumbotron {
+    background: url("pictures/hartwoodbanner_1400x350.jpg") no-repeat;
+    height: 350px;
+   }
+   .Shop-item-tile {
+    padding: 0 12px 12px 12px;
+   }
+ }
+/*↑for adding a background image for screen sizes + media things ↑*/
+
+
+
+
+
